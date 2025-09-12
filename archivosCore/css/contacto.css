@@ -1,0 +1,31 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;   /* Garantiza que el body ocupa toda la pantalla */
+  background: black;
+  overflow-x: hidden;  /* Solo oculta scroll horizontal */
+  overflow-y: auto;    /* Permite scroll vertical */
+}
+
+html {
+  height: 100%;
+  background: black; /* Fondo por defecto */
+}
+
+.contenedorCon {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  color: white;
+  padding: 5%;         /* Menos padding, evita huecos */
+  border-bottom: solid 3px gold;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-top: 2px solid white;
+}

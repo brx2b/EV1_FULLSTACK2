@@ -16,8 +16,8 @@ body::before {
   position: fixed;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* filtro oscuro */
-  z-index: -1; /* queda detrás del contenido */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 body::-webkit-scrollbar{
     width: 6px;
@@ -97,7 +97,116 @@ footer{
     border-top: solid 2px white;
     padding-top: 50px;
 }
+@media (max-width: 1440px) {
+  #media-pag {
+    grid-template-columns: repeat(2,1fr);
+    font-size: 20px;
+    padding: 15px;
+    row-gap: 15px;
+  }
 
+  .tarjetas {
+    width: 330px; 
+  }
+
+  #eslogan {
+    font-size: 70px; 
+    margin-left: 20px;
+  }
+
+  #bienvenida {
+    font-size: 40px;
+    padding: 15px;
+  }
+
+  .descripcion {
+    font-size: 16px;
+  }
+
+  input {
+    width: 220px;
+    font-size: 16px;
+  }
+
+  .cuenta {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 90%;
+    padding: 0 10px;
+  }
+
+  #eslogan {
+    font-size: 60px;
+    margin-left: 15px;
+  }
+
+  .tarjetas {
+    width: 320px; 
+  }
+
+  .descripcion {
+    font-size: 16px;
+  }
+
+  #bienvenida {
+    font-size: 36px;
+    padding: 15px;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  .cuenta {
+    grid-template-columns: 1fr; 
+    padding: 20px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 80%;
+    padding: 0 5px;
+  }
+
+  #eslogan {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+
+  .tarjetas {
+    width: 90%;
+  }
+
+  #media-pag {
+    grid-template-columns: 1fr; 
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .descripcion {
+    font-size: 14px;
+  }
+
+  #bienvenida {
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  .texto-cuenta {
+    font-size: 16px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 14px;
+  }
+}
 .tarjeta {
     display: flex;
     flex-direction: column;
