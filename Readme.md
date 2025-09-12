@@ -53,3 +53,16 @@ Incluye lo siguiente:
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b57687db-cca8-459c-9101-44286a9d493a" />
 
+Ventana principal de bienvenida
+
+---
+
+<img width="1920" height="1080" alt="Captura desde 2025-09-12 13-08-38" src="https://github.com/user-attachments/assets/758d232c-d15b-4795-bc04-eb902c08eaca" />
+
+Productos recomendados en la ventana principal
+
+---
+
+<img width="1920" height="1080" alt="Captura desde 2025-09-12 13-08-52" src="https://github.com/user-attachments/assets/528d7d15-043b-41b6-b511-373a383c4b59" />
+
+Apartado de "Contacto" con información relevante para contactarnos en caso de problemas.
