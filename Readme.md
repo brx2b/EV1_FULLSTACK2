@@ -9,12 +9,12 @@ Brian Aravena Quezada
 
 ## Lujo Dorado
 
-La tienda de lujo más grande del mundo ya cuenta con su propia página web, con ¡compras y envios de forma internaciona!.
+La tienda de lujo más grande del mundo ya cuenta con su propia página web con ¡compras y envíos de forma internaciona!, 
 De forma segura y fácil podras obtener lo que siempre has deseado con tan solo unos pocos clicks haciendo que tu siguiente compra sea sencilla y ágil.
 
 Nuestros socios comerciales harán que tu compra sea una experiencia agradable manteniendo todos los estandares de envío y compra de una manera segura y premium.
 
-Se puede estimar un tiempo de envío aproximado según el continente de entrega, la variacion de envio puede depender de la residecia de entrega y diferentes temas relacionados
+Se puede estimar un tiempo de envío aproximado según el continente de entrega, la variación de envio puede depender de la residecia de entrega y diferentes temas relacionados
 a la organización y comunicación entre nuestros diferentes socios que administran nuestros envios.
 
 ### A continuación puedes encontrar una tabla de referencia con los diferentes tiempos de envío y las compañias que se encargan de la administración del paquete:
@@ -22,7 +22,7 @@ a la organización y comunicación entre nuestros diferentes socios que administ
 | Continente| Tiempo aprox. | compañía |
 |---|---|---|
 | Norte América | 7 - 15 dias | Envio Mundial |
-| Sur América | 4 - 9 días | Latin express |
+| América del sur | 4 - 9 días | Latin express |
 | Asia | 14 - 23 días | Oriental envios |
 | Europa | 7 - 24 días | Envio Mundial |
 | Oceanía | 9 - 18 días | Fast express |
