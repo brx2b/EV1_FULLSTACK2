@@ -1,6 +1,8 @@
 const usuarios = [
     {id:1, nickname: "admin", email:"eladmin77@gmail.com", password:"admin123"}
 ]
+let usuarioActivo=(JSON.parse(localStorage.getItem("usuario"))) || [];
+verificiarSesion();
 
 function registrarUsuario(){
     const nicknameReg=document.getElementById("nick-registrar").value;
@@ -30,6 +32,7 @@ function registrarUsuario(){
                 document.getElementById("email-registrar").value="";
                 usuarios.push({id:usuarios.length+1, nickname:nicknameReg, email:emailReg, password:contraseReg})
                 console.log(usuarios)
+                document.getElementById("error-reg").innerText="Ahora pruebe iniciar sesión"
             }
         }else{console.log("Las contraseñas no coinciden")
             document.getElementById("contrase-registrar").style.border="1px solid red"
@@ -50,7 +53,12 @@ function verificarUsuario(){
             alert("Se ha iniciado sesion correctamente")
             document.getElementById("nick-iniciar").value="";
             document.getElementById("contrase-iniciar").value="";
-            window.location.href="tienda.html"
+
+            localStorage.setItem("usuario", JSON.stringify(usuario))
+            usuarioActivo=(JSON.parse(localStorage.getItem("usuario")))
+
+            console.log(usuarioActivo)
+            location.reload();
         }else{
             console.log("El usuario o la contraseña son incorrectos")
             document.getElementById("nick-iniciar").style.border="2px solid red"
@@ -60,4 +68,26 @@ function verificarUsuario(){
 
     })
 
+}
+function verificiarSesion(){
+
+    if(usuarioActivo.nickname==undefined){
+        console.log("No hay usuario activo")
+    }else{
+        console.log("Hay un usuario activo")
+        console.log(usuarioActivo)
+        document.getElementsByClassName('cuenta').item(0).innerHTML=``
+        document.getElementById('btn-cerrar').removeAttribute("hidden")
+        
+        document.getElementById('bienvenida').innerText=`Bienvenido, ${usuarioActivo.nickname}`
+    }
+
+}
+function cerrarSesion(){
+    localStorage.removeItem("usuario")
+    console.log("Sesión cerrada")
+    alert("Sesión cerrada")
+    usuarioActivo=(JSON.parse(localStorage.getItem("usuario")))
+    console.log(usuarioActivo)
+    location.reload();
 }

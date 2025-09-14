@@ -30,11 +30,12 @@ body::-webkit-scrollbar-thumb{
     text-decoration: underline;
 }
 #barra-sup{
+    align-items: center;
+
     color: rgb(255, 255, 255);
     background-color: black;
     padding: 10px;
     text-align: center;
-    z-index: 100;
 }
 #blok{
     color: rgb(235, 171, 98);
@@ -61,8 +62,16 @@ span{
     font-family: "DM Serif Text", serif;
     font-style: normal;
     font-size: 23px;
-    margin-right: 80px;
+    margin: 20px;
+    padding: 20px;
+    align-self: center;
 }
+#btn-cerrar{
+  font-family: "DM Serif Text", serif;
+    font-style: normal;
+    font-size: 13px;
+}
+
 #eslogan{
     font-family: "DM Serif Text", serif;
     font-style: normal;
@@ -114,11 +123,6 @@ footer{
     margin-left: 20px;
   }
 
-  #bienvenida {
-    font-size: 40px;
-    padding: 15px;
-  }
-
   .descripcion {
     font-size: 16px;
   }
@@ -154,10 +158,6 @@ footer{
     font-size: 16px;
   }
 
-  #bienvenida {
-    font-size: 36px;
-    padding: 15px;
-  }
 
   input {
     width: 200px;
@@ -191,11 +191,6 @@ footer{
 
   .descripcion {
     font-size: 14px;
-  }
-
-  #bienvenida {
-    font-size: 28px;
-    padding: 10px;
   }
 
   .texto-cuenta {
