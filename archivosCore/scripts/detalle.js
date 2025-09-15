@@ -11,12 +11,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // BOTÓN AÑADIR AL CARRITO
-  document.querySelector('.info-producto button').addEventListener('click', () => {
-    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+  
+  
+    console.log("Usuario activo:", usuarioActivo.nickname)
+    document.querySelector('.info-producto button').addEventListener('click', () => {
+      if(usuarioActivo.nickname==undefined){
+        console.log("No hay usuario activo")
+        alert("Debe iniciar sesión para añadir productos al carrito")
+        document.querySelector('.info-producto button').disabled = true;
+      }else{
+        let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-    carrito.push(productoData); // Agrega producto al array
-    localStorage.setItem('carrito', JSON.stringify(carrito));
+        carrito.push(productoData); // Agrega producto al array
+        localStorage.setItem('carrito', JSON.stringify(carrito));
 
-    alert("Producto añadido al carrito");
+        alert("Producto añadido al carrito");
+      }
+    
   });
+  
 });
