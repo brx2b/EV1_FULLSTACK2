@@ -4,7 +4,6 @@
 |---
 Brian Aravena Quezada
 
-💀 **¡El desarollo de la página sigue en progreso!** 💀 🔴
 ---
 
 ## Lujo Dorado

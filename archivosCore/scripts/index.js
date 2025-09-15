@@ -84,11 +84,12 @@ function verificiarSesion(){
     }
 
 }
-function cerrarSesion(){
-    localStorage.removeItem("usuario")
-    console.log("Sesión cerrada")
-    alert("Sesión cerrada")
-    usuarioActivo=(JSON.parse(localStorage.getItem("usuario")))
-    console.log(usuarioActivo)
-    location.reload();
+function cerrarSesion() {
+    // Borrar usuario
+    localStorage.removeItem("usuario");
+    console.log("Sesión cerrada");
+    alert("Sesión cerrada");
+    
+    // Redirigir al index
+    location.href = "../index.html";
 }
