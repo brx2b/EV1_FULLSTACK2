@@ -10,12 +10,89 @@
 </head>
 <body>
     <div id="barra-sup">
+        <button id="btn-cerrar" type="button" onclick="cerrarSesion()" hidden 
+            style="width: 100px; height: 40px ; border: solid 2px gold; margin: 10px; 
+            color: white; background-color: black;" > Cerrar sesión</button>
         <span id="logo">Lujo Dorado</span>
         <a href="index.html"><span class="menu">Inicio</span></a>
-        <a href="tienda.html"><span class="menu">Tienda</span></a>
         <a href="contacto.html"><span class="menu">Contacto</span></a>
         <a href="blog.html" ><span class="menu">Blog</span></a>
         <a href="nosotros.html" ><span class="menu">Nosotros</span></a>
+        <a href="carrito.html" ><span class="menu" id="carritoBTN" hidden>Carrito</span></a>
     </div>
+    <div id="contenedor-blog">
+        <h1 style="color: gold; text-align: center;">Blog</h1>
+        <br>
+    </div>
+    <div class="entrada-blog">
+    <h2>El primer collar hecho 99% de materia negra</h2>
+    <p>Dicen que la moda es un agujero negro para la billetera… ahora puedes llevarlo literalmente en el cuello. Este collar de materia negra concentra elegancia y misterio en una pieza que parece absorber la luz (y las miradas) a su alrededor. No recomendado para quienes pierden las llaves con frecuencia: podría tragárselas.</p>
+    </div>
+
+    <div class="entrada-blog">
+        <h2>Anillos de gravedad: joyas que desafían la física</h2>
+        <p>Estos anillos no solo adornan tus manos, también retan a Newton. Diseñados con microtecnología gravitacional, generan un campo sutil que los hace “flotar” apenas sobre tu piel. La ciencia se volvió lujo… y tu estilo, una anomalía elegante.</p>
+    </div>
+
+    <div class="entrada-blog">
+        <h2>La revolución del cristal cuántico en accesorios de lujo</h2>
+        <p>Cuando dijimos que queríamos accesorios brillantes, los científicos se lo tomaron muy en serio. El cristal cuántico cambia de tono según el estado de tus partículas… o de tu ánimo, quién sabe. Perfecto para quienes necesitan un accesorio que sea tan impredecible como ellos.</p>
+    </div>
+
+    <div class="entrada-blog">
+        <h2>Bolígrafos de titanio líquido: escritura con estilo futurista</h2>
+        <p>Este bolígrafo no solo escribe, deja una declaración: “soy demasiado sofisticado para usar un lápiz común”. Hecho de titanio líquido, cada trazo es tan elegante que podrías firmar un tratado de paz intergaláctico con él. Ideal para contratos serios… o para tu lista de compras.</p>
+    </div>
+
+    <div class="entrada-blog">
+        <h2>Arte portátil: esculturas miniatura en metales raros</h2>
+        <p>Porque colgar cuadros ya es del siglo pasado, ahora puedes llevar una escultura de museo en tu chaqueta. Estas piezas son tan pequeñas y detalladas que necesitarás una lupa para apreciar el arte… y otra para presumir el precio.</p>
+    </div>
+
+    </div>
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;  
+        background: black;
+        overflow-x: hidden; 
+        overflow-y: auto; 
+        }
+        .entrada-blog {
+            background-color: rgba(255, 215, 0, 0.2);
+            border: 2px solid gold;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            color: white;
+            border-radius: 10px;
+        }
+
+        html {
+        height: 100%;
+        background: black;
+        }
+
+        .contenedorCon {
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 20px;
+        color: white;
+        padding: 5%;
+        border-bottom: solid 3px gold;
+        box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        footer {
+        background: black;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        border-top: 2px solid white;
+        }
+        
+    </style>
+    <script src="/archivosCore/scripts/index.js"></script>
+    <footer>&copy 2025 sitio web desarrollado por brx2b (Brian Aravena). Todos los derechos reservados.</footer>
 </body>
 </html>

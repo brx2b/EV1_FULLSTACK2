@@ -56,7 +56,7 @@ function verificarUsuario(){
 
             localStorage.setItem("usuario", JSON.stringify(usuario))
             usuarioActivo=(JSON.parse(localStorage.getItem("usuario")))
-
+            
             console.log(usuarioActivo)
             location.reload();
         }else{
@@ -76,9 +76,10 @@ function verificiarSesion(){
     }else{
         console.log("Hay un usuario activo")
         console.log(usuarioActivo)
-        document.getElementsByClassName('cuenta').item(0).innerHTML=``
-        document.getElementById('btn-cerrar').removeAttribute("hidden")
         
+        document.getElementById('btn-cerrar').removeAttribute("hidden")
+        document.getElementById('carritoBTN').removeAttribute("hidden")
+        document.getElementsByClassName('cuenta').item(0).innerHTML=``
         document.getElementById('bienvenida').innerText=`Bienvenido, ${usuarioActivo.nickname}`
     }
 

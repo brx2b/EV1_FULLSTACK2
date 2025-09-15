@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yusmeing - Inicio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="/TiendaLujos/icon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div id="barra-sup">
@@ -14,10 +14,10 @@
             color: white; background-color: black;" > Cerrar sesión</button>
         <span id="logo">Lujo Dorado</span>
         <a href="index.html"><span class="menu">Inicio</span></a>
-        <a href="tienda.html"><span class="menu">Tienda</span></a>
         <a href="contacto.html"><span class="menu">Contacto</span></a>
         <a href="blog.html" ><span class="menu">Blog</span></a>
         <a href="nosotros.html" ><span class="menu">Nosotros</span></a>
+        <a href="carrito.html" ><span class="menu" id="carritoBTN" hidden>Carrito</span></a>
     </div>
     <div>
         <h1 id="bienvenida">Bienvenido a Lujo Dorado</h1>
@@ -44,11 +44,11 @@
                 <h1>Registrarse</h1>
                 <input type="text" name="" id="nick-registrar" placeholder="Nickname">
                 <br>
-                <input type="password" name="" id="email-registrar" placeholder="Correo electrónico">
+                <input type="email" name="" id="email-registrar" placeholder="Correo electrónico">
                 <br>
                 <input type="password" name="" id="contrase-registrar" placeholder="Contraseña">
                 <br>
-                <input type="email" name="" id="contrase-registrar-ver" placeholder="Confirmar contraseña">
+                <input type="password" name="" id="contrase-registrar-ver" placeholder="Confirmar contraseña">
                 <br>
                 <label id="error-reg" for=""></label>
                 <br>
@@ -59,14 +59,14 @@
     <div id="media-pag">
     <section>
         <div class="tarjeta">
-            <img class="tarjetas" src="/TiendaLujos/imgs/imgIndex/f9c771a0-4610-4755-b788-534178286120.jpeg" alt="Producto 1">
+            <img class="tarjetas" src="/imgs/imgIndex/f9c771a0-4610-4755-b788-534178286120.jpeg" alt="Producto 1">
             <p class="descripcion">Collar grueso con detalles de oro y perlas de jade</p>
             <a href="detalle.html"
             class="tex-detalle"
             data-nombre="Collar grueso con detalles de oro y perlas de jade"
             data-descripcion="Collar de lujo con oro y perlas de jade, perfecto para una fiesta casual."
             data-precio="$199.99"
-            data-imagen="/TiendaLujos/imgs/imgIndex/f9c771a0-4610-4755-b788-534178286120.jpeg">
+            data-imagen="/imgs/imgIndex/f9c771a0-4610-4755-b788-534178286120.jpeg">
             Detalles
             </a>
             
@@ -75,14 +75,14 @@
 
     <section>
         <div class="tarjeta">
-            <img class="tarjetas" src="/TiendaLujos/imgs/imgIndex/12f6e627-4fcb-47cd-a9f2-be5cf3011344.jpeg" alt="Producto 2">
+            <img class="tarjetas" src="/imgs/imgIndex/12f6e627-4fcb-47cd-a9f2-be5cf3011344.jpeg" alt="Producto 2">
             <p class="descripcion">Collar elegante de oro con diamante y jade</p>
             <a href="detalle.html"
             class="tex-detalle"
             data-nombre="Collar elegante de oro con diamante y jade"
             data-descripcion="Collar de lujo con diamante y jade auténtico, perfecto para ocasiones especiales."
             data-precio="$199.99"
-            data-imagen="/TiendaLujos/imgs/imgIndex/12f6e627-4fcb-47cd-a9f2-be5cf3011344.jpeg">
+            data-imagen="/imgs/imgIndex/12f6e627-4fcb-47cd-a9f2-be5cf3011344.jpeg">
             Detalles
             </a>
         </div>
@@ -90,56 +90,98 @@
 
     <section>
         <div class="tarjeta">
-            <img class="tarjetas" src="/TiendaLujos/imgs/imgIndex/output.jpg" alt="Producto 3">
+            <img class="tarjetas" src="/imgs/imgIndex/output.jpg" alt="Producto 3">
             <p class="descripcion">Collar de oro con detalles de diamante </p>
            <a href="detalle.html"
             class="tex-detalle"
             data-nombre="Collar de oro con detalles de diamante"
             data-descripcion="Collar de lujo de oro y detalles de diamantes para brillar en cualquier evento."
             data-precio="$199.99"
-            data-imagen="/TiendaLujos/imgs/imgIndex/output.jpg">
+            data-imagen="/imgs/imgIndex/output.jpg">
             Detalles
             </a>
         </div>
     </section>
     <section>
         <div class="tarjeta">
-            <img class="tarjetas" src="/TiendaLujos/imgs/imgIndex/output (1).jpg" alt="Producto 3">
+            <img class="tarjetas" src="/imgs/imgIndex/output (1).jpg" alt="Producto 3">
             <p class="descripcion">Collar de diamante blanco con detalles de titanio</p>
             <a href="detalle.html"
             class="tex-detalle"
             data-nombre="Collar de diamante blanco con detalles de titanio"
             data-descripcion="Collar de lujo de diamante blanco y titanio, ideal para eventos formales."
             data-precio="$199.99"
-            data-imagen="/TiendaLujos/imgs/imgIndex/output (1).jpg">
+            data-imagen="/imgs/imgIndex/output (1).jpg">
             Detalles
             </a>
         </div>
     </section>
     <section>
         <div class="tarjeta">
-            <img class="tarjetas" src="/TiendaLujos/imgs/imgIndex/output (2).jpg" alt="Producto 3">
+            <img class="tarjetas" src="/imgs/imgIndex/output (2).jpg" alt="Producto 3">
             <p class="descripcion">Pendientes de diamante blanco</p>
             <a href="detalle.html"
             class="tex-detalle"
             data-nombre="Pendientes de diamante blanco"
             data-descripcion="Pendientes de diamante blanco, perfectos para cualquier ocasión especial."
             data-precio="$199.99"
-            data-imagen="/TiendaLujos/imgs/imgIndex/output (2).jpg">
+            data-imagen="/imgs/imgIndex/output (2).jpg">
             Detalles
             </a>
         </div>
     </section>
     <section>
         <div class="tarjeta">
-            <img class="tarjetas" src="/TiendaLujos/imgs/imgIndex/output (3).jpg" alt="Producto 3">
+            <img class="tarjetas" src="/imgs/imgIndex/output (3).jpg" alt="Producto 3">
             <p class="descripcion">Grills de diamante dorado con ámbar</p>
             <a href="detalle.html"
             class="tex-detalle"
             data-nombre="Grills de diamante dorado con ámbar"
             data-descripcion="Grills de diamante dorado con ámbar, para ser la envidia de todos."
             data-precio="$199.99"
-            data-imagen="/TiendaLujos/imgs/imgIndex/output (3).jpg">
+            data-imagen="/imgs/imgIndex/output (3).jpg">
+            Detalles
+            </a>
+        </div>
+    </section>
+    <section>
+        <div class="tarjeta">
+            <img class="tarjetas" src="/imgs/imgIndex/huevo_.jpeg" alt="Producto 3">
+            <p class="descripcion">Huevo de ónice con soporte de oro</p>
+           <a href="detalle.html"
+            class="tex-detalle"
+            data-nombre="Huevo de ónice con soporte de oro"
+            data-descripcion="Un huevo negro increible que parece de otro mundo."
+            data-precio="$199.99"
+            data-imagen="/imgs/imgIndex/huevo_.jpeg">
+            Detalles
+            </a>
+        </div>
+    </section>
+    <section>
+        <div class="tarjeta">
+            <img class="tarjetas" src="/imgs/imgIndex/botella_miel_de_oro.jpg" alt="Producto 3">
+            <p class="descripcion">Botella de oro con miel premium</p>
+           <a href="detalle.html"
+            class="tex-detalle"
+            data-nombre="Botella de oro con miel premium"
+            data-descripcion="una preciosa botella de oro con miel premium."
+            data-precio="$199.99"
+            data-imagen="/imgs/imgIndex/botella_miel_de_oro.jpg">
+            Detalles
+            </a>
+        </div>
+    </section>
+    <section>
+        <div class="tarjeta">
+            <img class="tarjetas" src="/imgs/imgIndex/mono_oro.jpg" alt="Producto 3">
+            <p class="descripcion">Figura de oro de un mono muy bonito.</p>
+           <a href="detalle.html"
+            class="tex-detalle"
+            data-nombre="Mono de oro"
+            data-descripcion="Figura de oro muy elegante donde sea."
+            data-precio="$199.99"
+            data-imagen="/imgs/imgIndex/mono_oro.jpg">
             Detalles
             </a>
         </div>
@@ -161,6 +203,6 @@
 
     
     <footer>&copy 2025 sitio web desarrollado por brx2b (Brian Aravena). Todos los derechos reservados.</footer>
-    <script src="/TiendaLujos/archivosCore/scripts/index.js"></script>
+    <script src="/archivosCore/scripts/index.js"></script>
 </body>
 </html>

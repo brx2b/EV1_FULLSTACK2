@@ -8,7 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.info-producto h2').textContent = productoData.nombre;
     document.querySelector('.info-producto p:nth-of-type(1)').textContent = productoData.descripcion;
     document.querySelector('.info-producto p:nth-of-type(2)').textContent = `Precio: ${productoData.precio}`;
-  } else {
-    document.querySelector('.info-producto').innerHTML = '<p>No se encontró información del producto.</p>';
   }
+
+  // BOTÓN AÑADIR AL CARRITO
+  document.querySelector('.info-producto button').addEventListener('click', () => {
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    carrito.push(productoData); // Agrega producto al array
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+
+    alert("Producto añadido al carrito");
+  });
 });

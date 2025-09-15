@@ -282,3 +282,51 @@ input{
     color: white;
     transition: 320ms;
 }
+#media-pag-carr{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid black;
+    color: azure;
+    font-size: 24px;
+    font-style: normal;
+    font-family: "DM Serif Text", serif;
+    margin: 5px;
+    padding: 20px;
+    row-gap: 20px;
+    border-top: solid 2px white;
+    padding-top: 50px;
+}
+#lista-carrito{
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    border: solid 2px white;
+    border-radius: 10px;
+    min-height: 400px;
+}
+#titulo-carrito{
+    color: gold;
+    text-decoration: underline 3px white;
+    font-family: "DM Serif Text", serif;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: 0px;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 10px 20px black;
+}
+#btn-eliminarCarrito{
+    font-family: "DM Serif Text", serif;
+    font-style: normal;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: solid 2px white;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 320ms;
+    margin: 20px;
+}
