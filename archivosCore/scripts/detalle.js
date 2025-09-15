@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
     carrito.push(productoData) // Agrega producto al array
-      ocalStorage.setItem('carrito', JSON.stringify(carrito)) // Guarda el array actualizado en localStorage
+      localStorage.setItem('carrito', JSON.stringify(carrito)) // Guarda el array actualizado en localStorage
 
     alert("Producto añadido al carrito");
     }
