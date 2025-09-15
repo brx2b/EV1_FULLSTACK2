@@ -48,17 +48,17 @@ function verificarUsuario(){
 
     usuarios.forEach(usuario => {
 
-        if(nicknameIng===usuario.nickname && contraseIng===usuario.password){
+        if(nicknameIng===usuario.nickname && contraseIng===usuario.password){ //Si el usuario y la contraseña coinciden
             console.log("Se ha iniciado sesion correctamente")
             alert("Se ha iniciado sesion correctamente")
             document.getElementById("nick-iniciar").value="";
             document.getElementById("contrase-iniciar").value="";
 
-            localStorage.setItem("usuario", JSON.stringify(usuario))
-            usuarioActivo=(JSON.parse(localStorage.getItem("usuario")))
+            localStorage.setItem("usuario", JSON.stringify(usuario)) //Se guarda el usuario en el localStorage
+            usuarioActivo=(JSON.parse(localStorage.getItem("usuario"))) //Se actualiza la variable usuarioActivo
             
-            console.log(usuarioActivo)
-            location.reload();
+            console.log(usuarioActivo) 
+            location.reload(); //Se recarga la página para actualizar los elementos
         }else{
             console.log("El usuario o la contraseña son incorrectos")
             document.getElementById("nick-iniciar").style.border="2px solid red"
@@ -71,13 +71,13 @@ function verificarUsuario(){
 }
 function verificiarSesion(){
 
-    if(usuarioActivo.nickname==undefined){
+    if(usuarioActivo.nickname==undefined){ //Si el usuario no ha iniciado sesión
         console.log("No hay usuario activo")
     }else{
         console.log("Hay un usuario activo")
         console.log(usuarioActivo)
         
-        document.getElementById('btn-cerrar').removeAttribute("hidden")
+        document.getElementById('btn-cerrar').removeAttribute("hidden") //Se quitan los hidden y se muestran los elementos
         document.getElementById('carritoBTN').removeAttribute("hidden")
         document.getElementsByClassName('cuenta').item(0).innerHTML=``
         document.getElementById('bienvenida').innerText=`Bienvenido, ${usuarioActivo.nickname}`
@@ -85,11 +85,18 @@ function verificiarSesion(){
 
 }
 function cerrarSesion() {
-    // Borrar usuario
+    // Borrar usuario del localStorage
     localStorage.removeItem("usuario");
     console.log("Sesión cerrada");
     alert("Sesión cerrada");
     
-    // Redirigir al index
-    location.href = "../index.html";
+    // Redirigir al index según la ubicación actual
+    if (window.location.pathname.endsWith("index.html")) {
+        console.log("Estás en index.html");
+        location.href = "index.html";
+    }else{
+        location.href = "../index.html";
+    }
+
+    
 }

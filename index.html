@@ -12,7 +12,7 @@
         <button id="btn-cerrar" type="button" onclick="cerrarSesion()" hidden 
             style="width: 100px; height: 40px ; border: solid 2px gold; margin: 10px; 
             color: white; background-color: black;" > Cerrar sesión</button>
-        <span id="logo">Lujo Dorado</span>
+        <span id="logo">Yusmeing</span>
         <a href="index.html"><span class="menu">Inicio</span></a>
         <a href="archivosCore/contacto.html"><span class="menu">Contacto</span></a>
         <a href="archivosCore/blog.html" ><span class="menu">Blog</span></a>
@@ -20,7 +20,7 @@
         <a href="archivosCore/carrito.html" ><span class="menu" id="carritoBTN" hidden>Carrito</span></a>
     </div>
     <div>
-        <h1 id="bienvenida">Bienvenido a Lujo Dorado</h1>
+        <h1 id="bienvenida">Bienvenido a Yusmeing</h1>
         
         <div class="cuenta">
             <button id="btn-cerrar" type="button" hidden> Cerrar sesión</button>
@@ -178,7 +178,7 @@
             <p class="descripcion">Figura de oro de un mono muy bonito.</p>
            <a href="archivosCore/detalle.html"
             class="tex-detalle"
-            data-nombre="Mono de oro"
+            data-nombre="Mono de oro" 
             data-descripcion="Figura de oro muy elegante donde sea."
             data-precio="US$98,000"
             data-imagen="../imgs/imgIndex/mono_oro.jpg">
@@ -188,15 +188,15 @@
     </section>
 </div>
 <script>
-  document.querySelectorAll('.tex-detalle').forEach(link => {
-    link.addEventListener('click', function() {
+  document.querySelectorAll('.tex-detalle').forEach(link => { // Selecciona todos los enlaces de detalles
+    link.addEventListener('click', function() { // Añade un evento de clic a cada enlace
       const producto = {
         nombre: this.dataset.nombre,
         descripcion: this.dataset.descripcion,
         precio: this.dataset.precio,
         imagen: this.dataset.imagen
       };
-      localStorage.setItem('productoSeleccionado', JSON.stringify(producto));
+      localStorage.setItem('productoSeleccionado', JSON.stringify(producto)); // Guarda los datos del producto en localStorage
     });
   });
 </script>
