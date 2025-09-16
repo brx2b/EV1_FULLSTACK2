@@ -6,7 +6,7 @@ Brian Aravena Quezada
 
 ---
 
-## Lujo Dorado
+## Yusmeing
 
 La tienda de lujo más grande del mundo ya cuenta con su propia página web con ¡compras y envíos de forma internaciona!, 
 De forma segura y fácil podras obtener lo que siempre has deseado con tan solo unos pocos clicks haciendo que tu siguiente compra sea sencilla y ágil.
@@ -40,11 +40,20 @@ Incluye lo siguiente:
   
 + **Contacto** Apartado exclusivo para consultas y problemas relacionados con su compra o su navegación en el sitio web.
   
-+ **Blog** Si estás con curiosidad puedes entrar a nuestro blog donde encontraras algunas curiosidades y cosas no tan relacionadas a nuestra página.
++ **Blog** Si estás con curiosidad puedes entrar a nuestro blog donde encontraras algunas curiosidades y cosas varías.
   
 + **Nosotros** Para obtener infomación acerca de nuestro trabajo y la manera en como operamos puedes dirigirte a esté apartado.
 
 ---
+## Técnologias utilizadas
+
+Para la realización del sitio web se utilizaron diferentes técnologias modernas las cuales son:
+
++ HTML
+
++ CSS
+
++ JavaScript
 
 # Capturas del sitio web
 
