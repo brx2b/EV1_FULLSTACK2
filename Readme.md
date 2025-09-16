@@ -36,9 +36,7 @@ Nuestra página web se compone de diferentes apartados para ayudarte en tu compr
 ## ¿Qué apartados pueden encontrar?
 
 Incluye lo siguiente:
-+ **Inicio** Incluye inicio de sesión o registro para nuevos usuarios con un pequeño apartado de lo más comprado den catálogo.
-  
-+ **Tienda** Aquí se encuentra la mayor parte del catálogo con los diferentes productos que ofrecemos a la venta y se encuentren disponibles.
++ **Inicio** Incluye inicio de sesión o registro para nuevos usuarios con el cátalogo de productos disponibles.
   
 + **Contacto** Apartado exclusivo para consultas y problemas relacionados con su compra o su navegación en el sitio web.
   
